@@ -114,7 +114,7 @@ typedef struct builtin
 /* toem_shloop.c */
 int hsh(info_t *, char **);
 int find_builtin(info_t *);
-void find_cmd(har **);
+void find_cmd(info_t *);
 void *_realloc(void *, unsigned int, unsigned int);
 
 /* toem_memory.c */
@@ -192,7 +192,7 @@ int replace_alias(info_t *);
 int replace_vars(info_t *);
 int replace_string(char **, char *);
 
-#endifinfo_t *);
+#endif info_t *);
 void fork_cmd(info_t *);
 
 /* toem_parser.c */
